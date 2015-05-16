@@ -1,0 +1,43 @@
+<HTML>
+ <HEAD>
+  <TITLE></TITLE>
+ </HEAD>
+<BODY>
+
+  <Form name = "Forma1">
+
+  Numero1 <input type = "text" name = "num1"><br>
+  Numero2 <input type = "text" name = "num2"><br>
+  Numero3 <input type = "text" name = "num3"><br>  
+
+     <input type = "Button" name = "btn1" value ="mayor">
+ <script for = "btn1" event = "onclick" language = "VBScript">
+             
+   numero1 = cint(Forma1.num1.value)
+   numero2 = cint(Forma1.num2.value)
+   numero3 = cint(Forma1.num3.value)
+ 
+ if numero1 > numero2 and numero1 > numero3 then
+    document.write("El mayor es el numero 1")
+end if
+if numero2 > numero1 and numero2 > numero3 then
+    document.write("El mayor es el numero 2")
+end if
+if numero3 > numero1 and numero3 > numero2 then
+    document.write("El mayor es el numero 3")
+end if
+
+
+</script> 
+
+<SCRIPT language="VBSCRIPT">
+for variable = 1 to 10
+
+document.write("hola mundo cruel")
+document.write("<BR>")
+document.write("<input type='text' name='algo'>")
+next
+</script>
+</Form>
+</BODY>
+  </HTML>

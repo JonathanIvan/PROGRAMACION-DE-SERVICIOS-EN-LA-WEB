@@ -1,0 +1,44 @@
+<HTML>
+     <HEAD>
+         <TITLE></TITLE>
+     </HEAD>
+   <BODY>
+   <FORM name="Forma1">
+   Numero1<input type="text" name="num1"><br>
+   Numero2<input type="text" name="num2"><br>
+   <input type="Button" name="btn1" value="suma">
+   <input type="Button" name="btn2" value="resta">
+   <input type="Button" name="btn3" value="multiplicacion">
+   <input type="Button" name="btn4" value="division">
+   
+   <SCRIPT for="btn1" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   suma=numero1+numero2
+   msgbox(suma)
+   </SCRIPT>
+
+   <SCRIPT for="btn2" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   resta=numero1-numero2
+   msgbox(resta)
+   </SCRIPT>
+    
+    <SCRIPT for="btn3" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   multi=numero1*numero2
+   msgbox(multi)
+   </SCRIPT>
+
+    <SCRIPT for="btn4" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   divi=numero1/numero2
+   msgbox(divi)
+   </SCRIPT>
+
+   </FORM>
+     </BODY>
+       </HTML>

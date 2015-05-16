@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+<FORM name="Forma1">
+
+   Numero1
+   <input type="text" name="num1"><br>
+   Numero2<input type="text" name="num2"><br>
+  <input type="Button" name="btn1" value="Calcular">
+   
+<script for="btn1" event="onclick" language="VBScript">
+ numero1=cint(Forma1.num1.value)
+ numero2=cint(Forma1.num2.value)
+ document.write ("<Table border=1>")
+for Fila= 1 To numero1
+document.write ("<TR>" )
+document.write ("</TR>")
+for Columna= 1 To numero2
+document.write ("<TD>")
+document.write (Fila*Columna)
+
+document.write ("</TD>")
+
+next
+next
+document.write ("</Table>")
+</script>
+</FORM>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<HTML>
+	<HEAD>
+	</HEAD>
+	<BODY>
+		<FORM name= "forma1">
+			<label>Numero 1</label>
+			<input type="text" id="num1"><br>
+			<label>Numero 2</label>
+			<input type="text" id="num2"><br>
+			<input type="button" name="btn1" value="MULTIPLICAR" onclick="multiplica()">
+			<SCRIPT TYPE="text/JavaScript">
+				function multiplica(){
+					var1=document.getElementById('num1').value;
+					var2=document.getElementById('num2').value;
+					document.write("<table border='1'>");
+					for (var Filas=1;Filas<=var1;Filas++){
+							document.write("<tr>");
+						for (var Columnas=1;Columnas<=var2;Columnas++){
+							document.write("<td> "+Filas*Columnas+"</td>");
+						}
+							document.write("</tr>");
+					}
+					document.write("</table>");
+			}
+			</SCRIPT>
+		</FORM>
+	</BODY>
+</HTML>

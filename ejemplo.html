@@ -1,0 +1,30 @@
+<html>
+   <head>
+     
+      <script>
+         function pulsado()
+         {
+			 valor1= parseInt(document.getElementById('numero1').value);
+			 if(valor1=1){
+            var applet = document.getElementById('idApplet'); 
+            applet.cambia();
+			
+			 } if(valor1=2){
+            var applet = document.getElementById('idApplet2'); 
+            applet.cambia();
+			 }
+         }
+      </script>
+   </head>
+   <body>
+
+     
+      <applet id="idApplet" code="mensaje.class" width="200" height="100"></applet>
+      <applet id="idApplet2" code="casa.class" width="200" height="100"></applet>
+      <FORM name="formDisplay">
+         <label>Numero Applet 1 o 2</label>
+			<input type="text" id="numero1"><br>
+			<input type="button" id="btn1" value="Opcion" onclick="pulsado()">
+      </FORM>
+   </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+   <head>
+     
+      <script type="text/javascript" >
+         function pulsado()
+         {
+			 var pagina="";
+			 var pagina2="";
+			 valor1= parseInt(document.getElementById('numero1').value);
+			 if(valor1==1){
+				 
+				 pagina="file:///C:/Users/ALUMNOS/Documents/NetBeansProjects/jona/build/Ovalo.html";
+				 location.href=pagina;
+        
+			 } if(valor1==2){
+				  pagina2="file:///C:/Users/ALUMNOS/Documents/NetBeansProjects/jona/build/MayorEdad.html";
+				 location.href=pagina2;
+          
+			 }
+         }
+      </script>
+   </head>
+   <body>
+
+     
+
+      <FORM name="formDisplay">
+         <label>Numero Applet </label>
+			 1 o 2
+			 <input type="text" id="numero1"><br>
+			<input type="button" id="btn1" value="Opcion" onclick="pulsado()">
+      </FORM>
+   </body>
+</html>

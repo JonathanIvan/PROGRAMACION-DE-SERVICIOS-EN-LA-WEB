@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Asignaturas</title>
+
+</head>
+
+<body>
+<FORM name="Forma1">
+<script language="VBScript">
+
+for variable= 1 To 7
+document.write ("Asignatura"&"<input type='text' name='asig'><br><br>")
+
+next
+
+ document.write ("<br>")
+   
+ document.write ("<input type='button' name='btn1' value='Enviar' onClick='mifuncion()'>")
+
+function mifuncion()
+
+ dim Asi(1)
+ Asi(0)=numero1
+ 
+ 
+ for each variable in Asi
+ document.write ("Tu Asignatura es:"&variable&"<br>")
+  next
+ End function
+
+
+ </script>
+  </FORM> 
+</body>
+</html>

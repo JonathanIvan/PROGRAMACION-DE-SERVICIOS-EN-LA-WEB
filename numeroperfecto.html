@@ -1,0 +1,31 @@
+<HTML>
+ <HEAD>
+  <TITLE></TITLE>
+</HEAD>
+<BODY>
+<Form name = "Forma1">
+
+Numero1 <input type = "text" name = "num1"><br>
+ <input type = "Button" name = "btn1" value ="calcular">
+
+<script for = "btn1" event = "onclick" language = "VBScript">
+ num = cint(Forma1.num1.value)
+perfecto=0
+for numero=1 to num-1
+calcula=num Mod numero
+if calcula = 0 then
+perfecto=perfecto+numero
+end if
+document.write("<TR>")
+
+if(perfecto=num) then
+document.write("numero es perfecto") 
+else if
+document.write("numero no es perfecto")
+end if
+
+
+</script>
+</form>
+</BODY>
+  </HTML>

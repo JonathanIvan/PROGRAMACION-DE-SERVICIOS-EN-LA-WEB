@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+<FORM name="Forma1">
+
+   Numero<input type="text" name="num"><br>
+   
+  <input type="Button" name="btn1" value="Calcular">
+ </FORM>  
+<script for="btn1" event="onclick" language="VBScript">
+TOPE=cint(Forma1.num.value)
+NUMERO=1
+while(NUMERO<TOPE)
+acumulador=0
+i=1
+while(i<numero)
+if (NUMERO mod i=0 ) then
+acumulador=acumulador+i
+end if
+i=i+1
+wend
+ document.write ("<Table border=1>")
+if(acumulador=NUMERO) then
+document.write("<TD>El Numero: </TD><TD>"&NUMERO&"</TD><TD>ES PERFECTO</TD>")
+
+else 
+document.write("<TD>El Numero: </TD><TD>"&NUMERO&"</TD><TD>NO ES PERFECTO</TD>")
+
+end if
+NUMERO=NUMERO+1
+document.write ("</Table>")
+wend
+</script>
+<body>
+</body>
+</html>

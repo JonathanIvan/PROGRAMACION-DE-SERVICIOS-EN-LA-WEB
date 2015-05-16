@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Verificar Numeros Perfectos</title>
+</head>
+	<body>
+		<FORM name= "forma1">
+			<label>Numero 1</label>
+			<input type="text" id="numero1"><br>
+			<input type="button" id="btn1" value="Verificar Numero" onclick="CalculaNumero()">
+	<SCRIPT language= "JavaScript">
+		function CalculaNumero(){
+			var total=0;
+			valor1= parseInt(document.getElementById('numero1').value);
+			for (var numero=1;numero<=valor1-1;numero++){
+				var varlormod=valor1%numero
+				if (varlormod==0){
+					total=total+numero;
+				}
+			}
+			if (total==valor1){
+				alert("El numero "+valor1+" si es perfecto")
+			}
+			if (total!=valor1){
+				alert("El numero "+valor1+" no es perfecto")
+			}
+		}
+	</SCRIPT>
+		</FORM>
+	</body>
+</html>

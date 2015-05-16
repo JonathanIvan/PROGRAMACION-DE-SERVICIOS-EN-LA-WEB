@@ -1,0 +1,35 @@
+<HTML>
+	<HEAD>
+		<TITLE> Comparaciones </TITLE>
+	</HEAD>
+	<BODY>
+		<FORM name="forma1">
+			<label>Numero 1</label>
+			<input type="text" id="num1"><br>
+			<label>Numero 2</label>
+			<input type="text" id="num2"><br>
+			<label>Numero 3</label>
+			<input type="text" id="num3"><br>
+			<input type="submit" id="btn1" value="comparar" onclick="compara()">
+			<script type="text/JavaScript">
+				function compara(){
+					var var1= parseInt(document.getElementById('num1').value);
+					var var2= parseInt(document.getElementById('num2').value);
+					var var3= parseInt(document.getElementById('num3').value);
+					if (var1>var2 && var1>var3) {
+						alert("El mayor es: "+var1);
+					}
+					else if (var2>var1 && var2>var3){
+						alert("El mayor es: "+var2);
+					}
+					else if (var3>var2 && var3>var1) {
+						alert("El mayor es: "+var3);
+					}
+					else if (var1==var2 && var2==var3){
+						alert("Los 3 numeros son iguales: "+var1);
+					}
+				}
+			</script>
+		</FORM>
+	</BODY>
+</HTML>

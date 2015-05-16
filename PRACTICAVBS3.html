@@ -1,0 +1,84 @@
+<HTML>
+     <HEAD>
+         <TITLE></TITLE>
+     </HEAD>
+   <BODY>
+
+   <FORM name="Forma1">
+
+   Numero1<input type="text" name="num1"><br>
+   Numero2<input type="text" name="num2"><br>
+   Numero3<input type="text" name="num3"><br>
+
+   <input type="Button" name="btn1" value="suma">
+   <input type="Button" name="btn2" value="resta">
+   <input type="Button" name="btn3" value="multiplicacion">
+   <input type="Button" name="btn4" value="division">
+   <input type="Button" name="btn5" value="comparar">
+
+   <SCRIPT for="btn1" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   
+   suma=numero1+numero2
+   msgbox(suma)
+   </SCRIPT>
+
+   <SCRIPT for="btn2" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   
+   resta=numero1-numero2
+   msgbox(resta)
+   </SCRIPT>
+    
+    <SCRIPT for="btn3" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   
+   multi=numero1*numero2
+   msgbox(multi)
+   </SCRIPT>
+
+    <SCRIPT for="btn4" event="onclick" language="VBScript">
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   divi=numero1/numero2
+   msgbox(divi)
+   </SCRIPT>
+
+ <SCRIPT for="btn5" event="onclick" language="VBScript">
+
+   numero1=cint(Forma1.num1.value)
+   numero2=cint(Forma1.num2.value)
+   numero3=cint(Forma1.num3.value)
+
+   if numero1>numero2 and numero1>numero3 then
+   document.write("el mayor es el numero1 ") 
+   end if
+
+ if numero2>numero1 and numero2>numero3 then
+   document.write("el mayor es el Numero2 ")
+   end if
+
+if numero3>numero1 and numero3>numero2 then
+   document.write("el mayor es el Numero3 ")
+   end if
+
+if numero1=numero2 then 
+   document.write(" el numero1 y el numero2 son iguales")
+   end if
+
+if numero1=numero3 then
+   document.write(" el numero1 y el numero3 son iguales ")
+   end if
+
+if numero2=numero3 then
+   document.write(" el numero2 y el numero3 son iguales ")
+   end if
+
+   </SCRIPT>
+
+   </FORM>
+     </BODY>
+       </HTML>
